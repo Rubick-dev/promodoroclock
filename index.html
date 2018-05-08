@@ -10,34 +10,43 @@
 </head>
 <body>
 
-  <div class="container text-center">
+  <div class="container d-flex flex-column justify-content-center">
     
-    <div class="heading">
-      <h1>#FreeCodeCamp - Promodoro Clock</h1>
+    <div class="heading row">
+      <div class="col"><h1>#FreeCodeCamp - Promodoro Clock</h1></div>
+    </div>
+    
+    <div class="row  justify-content-center">
+      <div class="col"><p>Break Timer</p></div>
+      <div class="col"><p>Active Timer</p></div>
     </div>
 
-    <div class="button-parent row">
+    <div class="button-parent row justify-content-around" id="time-change-button"> <!-- Start of buttons row-->
+      <!-- <div class="break-div col-md-6 row justify-content-center"> -->
+        <div class="col-sm-1"><button class="reduce-break btn btn-primary" id="btmin" value="1">&LT;</button></div>
+        <div class="col-sm-4 display-break-time-div"><p><span class="break-timer-span">5</span> mins</p></div>
+        <div class="col-sm-1"><button class="increase-break btn btn-secondary" id="btpls" value="2">&GT;</button></div>
+      <!-- </div> -->
 
-      <div class="break-div col-md-6 row">
-        <div class="col-md-6 row">
-          <div class="col-md-3"><button class="reduce-break">&LT;</button></div>
-          <div class="col-md-6"><p>Break Timer</p></div>
-          <div class="col-md-3"><button class="increase-break">&GT;</button></div>
-        </div>
-      </div>
-
-      <div class="work-time col-md-6 row">
-        <div class="col-md-6 row">
-          <div class="col-md-3"><button class="reduce-session">&LT;</button></div>
-          <div class="col-md-6"><p>Active Timer</p></div>
-          <div class="col-md-3"><button class="increase-session">&GT;</button></div>
-        </div>
-      </div>
-
+      <!-- <div class="work-time col-md-6 row justify-content-center"> -->
+        <div class="col-sm-1"><button class="reduce-session btn btn-primary" id="atmin" value="3">&LT;</button></div>
+        <div class="col-sm-4 display-active-time-div"><p><span class="active-timer-span">25</span> mins</p></div>
+        <div class="col-sm-1"><button class="increase-session btn btn-secondary" id="atmax" value="4">&GT;</button></div>
+      <!-- </div> -->
     </div> <!-- End of buttonParent Div -->
 
-    <div>
-      <p>The countdown clock => <span id="time">05:00</span> minutes!</p>
+    <div class="counter" id="stop-start">
+      <div>
+        <p class="timer-type">You are now on <span class="tt">Active</span> time</p>
+      </div>
+      <div>
+          <p>The countdown clock => <span id="time">25:00</span> minutes!</p>
+      </div>
+      <div>
+        <button class="startbutton btn btn-success btn-lg" value="5">Start</button>
+        <button class="btn btn-warning btn-lg" value="6" >Reset</button>
+      </div>
+      
     </div>
 
   </div> <!-- End of container Div -->

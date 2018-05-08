@@ -1,17 +1,26 @@
 html, body {
   height: 100%;
+  text-align: center;
 }
 
 body {
   margin: 0;
 }
 
-/* .container {
-  width: 100%;
+h1 {
+  margin: 50px;
+}
+
+.button-parent {
+  margin: 50px;
   align-items: center;
   justify-content: center;
- }
+}
 
-.flex-item {
-  text-align: center;
-} */
+.tt {
+  font-size: 1.5rem;
+}
+
+.counter {
+  border: 1px solid black;
+}
