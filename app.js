@@ -87,13 +87,13 @@ function controlTimer(e) {
       timeNow = currentTimer;
       startTimer(timeNow, display);
 
-    } else if(!currentCountType) { // Runs when start is clciked afer pause when currentContentType is false and set to break
+    } else if(!currentCountType) { // Runs when start is clicked afer pause when currentContentType is false and set to break
       changeStartButton();
       timeNow = currentTimer;
       startTimer(timeNow, display);
 
     } else {
-      console.log("Houston we have a problem - this onditional should never run");
+      console.log("Houston we have a problem - this conditional should never run");
     }
   
   } else if (e.target.value == 7) { //hitting the pause button
@@ -106,7 +106,7 @@ function controlTimer(e) {
 }
 
 
-// The Active counter timer
+// The Active & Break counter timer
   function startTimer(duration, display) {
     let timer = duration, minutes, seconds;
     console.log(duration + " current duration iteration");
