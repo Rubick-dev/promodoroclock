@@ -1,5 +1,7 @@
 var timeCounterBreak = 5;
+var timeCounterBreakSeconds = 0;
 var timeCounterActive= 25;
+var timeCounterActiveSeonds = 0;
 var button = document.getElementById("time-change-button");
 var stopstart = document.getElementById("stop-start");
 var start = "Start";
@@ -124,4 +126,6 @@ function resetClock(){
 function pauseTimer(){
 console.log("clearInt ran");
 clearInterval(timeCountDownClear);
+
+//This is a test snipet
 }
