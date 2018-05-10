@@ -1,6 +1,15 @@
 html, body {
   height: 100%;
   text-align: center;
+  min-width: 350px;
+  background: #0E0B16;
+  color: #E7DFDD;
+  font-family: 'Volkhov', serif;
+}
+
+h1 {
+  font-family: 'Luckiest Guy', cursive;
+  font-size: 3rem;
 }
 
 body {
@@ -8,19 +17,69 @@ body {
 }
 
 h1 {
-  margin: 50px;
+  margin: 50px 50px 20px 50px;
 }
 
 .button-parent {
-  margin: 50px;
+  margin: 50px 50px 25px 50px;
   align-items: center;
   justify-content: center;
 }
 
 .tt {
+  margin-top: 5px;
   font-size: 1.5rem;
+  color: #A239CA;
 }
 
 .counter {
-  border: 1px solid black;
+  margin: 5px 40px;
+  border: 1px solid #4717F6;
 }
+
+footer {
+  font-size: .8rem;
+  margin-top: 50px;
+}
+
+.srt-btn-div {
+  margin-top: 30px;
+}
+
+.reduce-session,
+.increase-session,
+.reduce-break,
+.increase-break {
+  margin: 0 5px 15px 5px;
+  width: 60px;
+  height: 50px;
+}
+
+.break-div {
+  margin-right: 40px;
+}
+
+.work-time {
+  margin-left: 40px;
+}
+
+.timer-type {
+  margin-top:15px;
+}
+
+@media only screen and (max-width: 399px) {
+  .break-div {
+    margin-right: 0;
+  }
+  
+  .work-time {
+    margin-left: 0;
+  }
+  
+}
+
+
+/* div {
+color: #A239CA;
+color: #4717F6;
+} */

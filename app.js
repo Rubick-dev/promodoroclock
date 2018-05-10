@@ -70,7 +70,7 @@ stopstart.addEventListener('click', controlTimer, false);
 
 function controlTimer(e) {
   
-  console.log(e.target.value);
+  console.log(e.target.value + " click target value");
   if (e.target.value == 6) { // Hitting the reset button
     resetClock();
 

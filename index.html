@@ -4,54 +4,73 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/css?family=Volkhov" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Luckiest+Guy" rel="stylesheet">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <link rel="stylesheet" type="text/css" href="styles.css">
-  <title>Promodoro Clock</title>
+  <title>Poomodoro Clock</title>
 </head>
 <body>
 
   <div class="container d-flex flex-column justify-content-center">
     
     <div class="heading row">
-      <div class="col"><h1>#FreeCodeCamp - Promodoro Clock</h1></div>
+      <div class="col"><h1>Pomodoro Clock</h1></div>
     </div>
     
-    <div class="row  justify-content-center">
-      <div class="col"><p>Break Timer</p></div>
-      <div class="col"><p>Active Timer</p></div>
-    </div>
 
-    <div class="button-parent row justify-content-around" id="time-change-button"> <!-- Start of buttons row-->
-      <!-- <div class="break-div col-md-6 row justify-content-center"> -->
-        <div class="col-sm-1"><button class="reduce-break btn btn-primary" id="btmin" value="1">&LT;</button></div>
-        <div class="col-sm-4 display-break-time-div"><p><span class="break-timer-span">5</span> mins</p></div>
-        <div class="col-sm-1"><button class="increase-break btn btn-secondary" id="btpls" value="2">&GT;</button></div>
-      <!-- </div> -->
+    <div class="button-parent justify-content-around d.flex row" id="time-change-button"> <!-- Start of buttons row-->
+      
+      <div class="break-div col-sm-6 col justify-content-center"> <!-- Start of Break timer Content -->
+        <div> <!-- Break timer header-->
+          <p>Break Timer</p>
+        </div>
+        
+        <div class="d.flex justify-content-center row"> <!-- Break timer buttons -->
+          <div class="reduce-break-button-div"><button class="reduce-break btn btn-primary" id="btmin" value="1">&LT;</button></div>
+          <div class="increase-break-button-div"><button class="increase-break btn btn-secondary" id="btpls" value="2">&GT;</button></div>
+        </div>
 
-      <!-- <div class="work-time col-md-6 row justify-content-center"> -->
-        <div class="col-sm-1"><button class="reduce-session btn btn-primary" id="atmin" value="3">&LT;</button></div>
-        <div class="col-sm-4 display-active-time-div"><p><span class="active-timer-span">25</span> mins</p></div>
-        <div class="col-sm-1"><button class="increase-session btn btn-secondary" id="atmax" value="4">&GT;</button></div>
-      <!-- </div> -->
+        <div class=""> <!-- Break timer display output -->
+          <div class="display-break-time-div"><p><span class="break-timer-span">5</span> Minutes</p></div>
+        </div>
+      </div> <!-- End of Break timer divs -->
+
+
+      <div class="work-time col-sm-6 col justify-content-center"> <!-- Start of Active timer content-->
+        <div> <!-- Active timer header-->
+          <p>Active Timer</p>
+        </div>
+
+        <div class="d.flex justify-content-center row"> <!-- Active timer buttons-->
+          <div class="reduce-active-button-div"><button class="reduce-session btn btn-primary" id="atmin" value="3">&LT;</button></div>
+          <div class="increase-active-button-div"><button class="increase-session btn btn-secondary" id="atmax" value="4">&GT;</button></div>
+        </div>
+        
+        <div class="display-active-time-div"> <!-- Active timer display output-->
+          <p><span class="active-timer-span">25</span> Minutes</p>
+        </div>
+      </div> <!-- End of Active timer content-->
+
     </div> <!-- End of buttonParent Div -->
 
     <div class="counter" id="stop-start">
       <div>
-        <p class="timer-type">You are now on <span class="tt">Active</span> time</p>
+        <p class="timer-type"><span class="tt">Active</span></p>
       </div>
       <div>
-          <p>The countdown clock => <span id="time">25:00</span> minutes!</p>
+          <p><span id="time">25:00</span> minutes!</p>
       </div>
-      <div>
+    </div>
+
+    <div class="srt-btn-div">
         <button class="startbutton btn btn-success btn-lg" value="5">Start</button>
         <button class="btn btn-danger btn-lg" value="6" >Reset</button>
       </div>
-      
-    </div>
 
   </div> <!-- End of container Div -->
 
-  <footer>Made by<a href="https://github.com/Rubick-dev"> Rubick-dev</footer>
+  <footer>A #FreeCodeCamp Challenge developed by<a href="https://github.com/Rubick-dev"> Rubick-dev</footer>
 
   <script type="text/javascript" src="app.js"></script>
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
