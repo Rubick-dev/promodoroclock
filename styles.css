@@ -2,8 +2,8 @@ html, body {
   height: 100%;
   text-align: center;
   min-width: 350px;
-  background: #0E0B16;
-  color: #E7DFDD;
+  background: #D5D5D5;
+  color: #9099A2;
   font-family: 'Volkhov', serif;
 }
 
@@ -28,13 +28,18 @@ h1 {
 
 .tt {
   margin-top: 5px;
-  font-size: 1.5rem;
-  color: #A239CA;
+  font-size: 3.5rem;
+  color: #D5D5D5;
 }
 
 .counter {
   margin: 5px 40px;
-  border: 1px solid #4717F6;
+  /* background:  rgba(144, 153, 162, 0.5) no-repeat center url("Stopwatch2.png"); */
+  background:  rgba(144, 153, 162, 0.5);
+  background-size: cover;
+  border: 1px solid #96858f;
+  min-width: 100%;
+  min-height: 100%;
 }
 
 footer {
@@ -56,30 +61,40 @@ footer {
 }
 
 .break-div {
-  margin-right: 40px;
+  padding-right: 40px;
 }
 
 .work-time {
-  margin-left: 40px;
+  padding-left: 40px;
 }
 
 .timer-type {
   margin-top:15px;
 }
 
+#time {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 5rem;
+  color: #D5D5D5;
+}
+
 @media only screen and (max-width: 399px) {
   .break-div {
     margin-right: 0;
+    padding-right: 0;
   }
   
   .work-time {
     margin-left: 0;
+    padding-left: 0;
   }
   
 }
 
 
 /* div {
-color: #A239CA;
-color: #4717F6;
+color: #96858f; // Dusty
+color: #6D7993; // Lavendar
+color: #9099A2; // Overcast
+color: #D5D5D5; // Paper
 } */
