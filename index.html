@@ -28,7 +28,7 @@
         </div>
         
         <div class="d.flex justify-content-center row"> <!-- Break timer buttons -->
-          <div class="reduce-break-button-div"><button class="reduce-break btn btn-primary" id="btmin" value="1">&LT;</button></div>
+          <div class="reduce-break-button-div"><button class="reduce-break btn" id="btmin" value="1">&LT;</button></div>
           <div class="increase-break-button-div"><button class="increase-break btn btn-secondary" id="btpls" value="2">&GT;</button></div>
         </div>
 
@@ -44,7 +44,7 @@
         </div>
 
         <div class="d.flex justify-content-center row"> <!-- Active timer buttons-->
-          <div class="reduce-active-button-div"><button class="reduce-session btn btn-primary" id="atmin" value="3">&LT;</button></div>
+          <div class="reduce-active-button-div"><button class="reduce-session btn" id="atmin" value="3">&LT;</button></div>
           <div class="increase-active-button-div"><button class="increase-session btn btn-secondary" id="atmax" value="4">&GT;</button></div>
         </div>
         
@@ -55,7 +55,7 @@
 
     </div> <!-- End of buttonParent Div -->
 
-    <div class="counter" id="stop-start">
+    <div class="counter" id="timer-display-div">
       <div>
         <p class="timer-type"><span class="tt">Active</span></p>
       </div>
@@ -64,7 +64,7 @@
       </div>
     </div>
 
-    <div class="srt-btn-div">
+    <div class="srt-btn-div" id="stop-start">
         <button class="startbutton btn btn-success btn-lg" value="5">Start</button>
         <button class="btn btn-danger btn-lg" value="6" >Reset</button>
       </div>
