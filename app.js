@@ -1,14 +1,14 @@
 var display = document.querySelector('#time');  //Selects teh display area for the count down time
-var breakTimeDisplay = 5; // time display for 
-var breakCurrentTime = breakTimeDisplay * 60; // 
-var activeTimeDisplay = 25;
-var activeCurrentTime = activeTimeDisplay * 60;
+var breakTimeDisplay = 5; // time display for break timer
+var breakCurrentTime = breakTimeDisplay * 60; // time calculation for countdown timer for break
+var activeTimeDisplay = 25; // time display for acive timer
+var activeCurrentTime = activeTimeDisplay * 60; // time calculation for countdown timer for active
 var button = document.getElementById("time-change-button");
 var stopstart = document.getElementById("stop-start");
 var currentTimer; //used when clock is paused
 var timeCountDownClear;  // Set interval variable
 var currentCountType = null; //Null = timer not started, Active = True and Break = False
-var timeNow;
+var timeNow; //timer used when doing count down
 
 // event Listener for time change buttons(4)
 button.addEventListener('click', changeTimer, false);
